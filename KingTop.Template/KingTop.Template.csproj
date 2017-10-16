@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E55F7582-D104-43F2-BE5B-F3938744BCFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KingTop.Template</RootNamespace>
+    <AssemblyName>KingTop.Template</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LabelUtils.cs" />
+    <Compile Include="ParamType\ContentPageSaveType.cs" />
+    <Compile Include="ParamType\Field.cs" />
+    <Compile Include="ParamType\FirstMenuDirParam.cs" />
+    <Compile Include="ParamType\FormLabel.cs" />
+    <Compile Include="ParamType\FreeLabel.cs" />
+    <Compile Include="ParamType\FreeLabelConfig.cs" />
+    <Compile Include="ParamType\HtmlContainer.cs" />
+    <Compile Include="ParamType\IncludeLabel.cs" />
+    <Compile Include="ParamType\LinkOpenType.cs" />
+    <Compile Include="ParamType\LoopLabelParseParam.cs" />
+    <Compile Include="ParamType\LoopTemplate.cs" />
+    <Compile Include="ParamType\Menu.cs" />
+    <Compile Include="ParamType\MenuShowType.cs" />
+    <Compile Include="ParamType\Navigator.cs" />
+    <Compile Include="ParamType\NeedSplitLabel.cs" />
+    <Compile Include="ParamType\NeedSplitLabelType.cs" />
+    <Compile Include="ParamType\PublishParam.cs" />
+    <Compile Include="ParamType\PublishType.cs" />
+    <Compile Include="ParamType\SinglePageLabel.cs" />
+    <Compile Include="ParamType\SpecialMenuLabel.cs" />
+    <Compile Include="ParamType\SplitLabel.cs" />
+    <Compile Include="ParamType\SubModelContentParam.cs" />
+    <Compile Include="ParamType\SubModelParam.cs" />
+    <Compile Include="ParamType\SysLabelCategory.cs" />
+    <Compile Include="ParamType\SysLabelCommentSubmit.cs" />
+    <Compile Include="ParamType\SysLabelContent.cs" />
+    <Compile Include="ParamType\SysLabelList.cs" />
+    <Compile Include="ParamType\SysLabelMenu.cs" />
+    <Compile Include="ParamType\SysLabelMenuType.cs" />
+    <Compile Include="ParamType\SysLabelNav.cs" />
+    <Compile Include="ParamType\SysLabelPeriodical.cs" />
+    <Compile Include="ParamType\TemplateType.cs" />
+    <Compile Include="TPublic.cs" />
+    <Compile Include="HProgressBar.cs" />
+    <Compile Include="ParseFreeLabel.cs" />
+    <Compile Include="ParseStaticLabel.cs" />
+    <Compile Include="ParseSystemLabel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publish.cs" />
+    <Compile Include="Split.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KingTop.Common\KingTop.Common.csproj">
+      <Project>{9F35FFA7-FE46-4CBE-B4AA-94B2190D214A}</Project>
+      <Name>KingTop.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KingTop.Config\KingTop.Config.csproj">
+      <Project>{8316DC72-09C5-4EAB-955C-0272BBEA7216}</Project>
+      <Name>KingTop.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KingTop.IDAL\KingTop.IDAL.csproj">
+      <Project>{871E0590-16BC-4B53-9C86-F722CBD0C1D8}</Project>
+      <Name>KingTop.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KingTop.Model\KingTop.Model.csproj">
+      <Project>{A1B665BB-C516-4000-88C6-ECC833921A74}</Project>
+      <Name>KingTop.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

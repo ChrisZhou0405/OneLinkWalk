@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+body{ 
+	background:url(../images/loginwebbg.png);
+	font-size:12px;
+}
+.slogoinContainer{
+	background:url(../images/loginContainer.jpg) center 50px no-repeat;
+	height:470px;
+}
+.slogoinContainer .loginLayer{
+	width:190px;
+	color:#fff;
+	position:absolute;
+	left:50%;
+	margin:220px 0 0 -30px;
+	}
+
+.loginLayer select,.loginLayer input.showInput{
+	font-size:12px;
+	width:130px;
+	}
+.slogoinContainer .loginLayer select{
+	width:184px;
+	/*BEHAVIOR: url('css/selectBox.htc'); cursor: hand;*/
+	border:#e4e4e4 1px solid;
+	}
+.slogoinContainer .loginLayer input{
+	border:0px;
+	color:#828282;	
+	padding:2px;
+}
+.slogoinContainer .loginLayer p{ 
+	margin-bottom:3px; 
+	clear:both
+}
+.loginLayer dt,.loginLayer dd{ 
+	float:left;
+}
+.slogoinContainer .loginLayer dd img{ 
+	position:relative; 
+	top:1px; 
+	height:20px; 
+	width:50px;
+}
+.slogoinContainer .showRegExp{ 
+	width:80px;
+}
+.slogoinContainer .loginsubmit{
+	position:relative;
+	top:5px;
+	}

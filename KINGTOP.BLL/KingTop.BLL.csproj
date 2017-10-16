@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC02F834-649B-4BA0-AF72-A1B45C10EED0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KingTop.BLL</RootNamespace>
+    <AssemblyName>KingTop.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Content\CommonField.cs" />
+    <Compile Include="Content\ControlManageEdit.cs" />
+    <Compile Include="Content\ControlManageEditInterface.cs" />
+    <Compile Include="Content\ControlManageList.cs" />
+    <Compile Include="Content\ControlManageListLink.cs" />
+    <Compile Include="Content\ControlManageListSearch.cs" />
+    <Compile Include="Content\ControlManageView.cs" />
+    <Compile Include="Content\FieldManage.cs" />
+    <Compile Include="Content\FieldManageList.cs" />
+    <Compile Include="Content\ModelAjaxDeal.cs" />
+    <Compile Include="Content\ModelcommonFieldGroup.cs" />
+    <Compile Include="Content\ModelField.cs" />
+    <Compile Include="Content\ModelFieldCreate.cs" />
+    <Compile Include="Content\ModelFieldGroup.cs" />
+    <Compile Include="Content\ModelListConfig.cs" />
+    <Compile Include="Content\ModelManage.cs" />
+    <Compile Include="Content\ModelManageLink.cs" />
+    <Compile Include="Content\ModelManageSysField.cs" />
+    <Compile Include="Content\ParseModel.cs" />
+    <Compile Include="Content\ParseModelEdit.cs" />
+    <Compile Include="Content\ParseModelEditField.cs" />
+    <Compile Include="Content\ParseModelEditSysField.cs" />
+    <Compile Include="Content\ParseModelList.cs" />
+    <Compile Include="Content\ParseModelListInfo.cs" />
+    <Compile Include="Content\ParseModelListLink.cs" />
+    <Compile Include="Content\ParseModelListSearch.cs" />
+    <Compile Include="Content\ParseModelView.cs" />
+    <Compile Include="Content\RecyclingAssociated.cs" />
+    <Compile Include="Content\RecyclingManage.cs" />
+    <Compile Include="Content\ReviewFlow.cs" />
+    <Compile Include="Content\ReviewFlowLog.cs" />
+    <Compile Include="Public.cs" />
+    <Compile Include="Single\SinglePage.cs" />
+    <Compile Include="SysManage\Account.cs" />
+    <Compile Include="SysManage\AccountSite.cs" />
+    <Compile Include="SysManage\ActionPermit.cs" />
+    <Compile Include="SysManage\ColumnRightTool.cs" />
+    <Compile Include="SysManage\DataBaseManage.cs" />
+    <Compile Include="SysManage\Module.cs" />
+    <Compile Include="SysManage\ModuleNode.cs" />
+    <Compile Include="SysManage\PublicOper.cs" />
+    <Compile Include="SysManage\RightTool.cs" />
+    <Compile Include="SysManage\Role.cs" />
+    <Compile Include="SysManage\RolePermit.cs" />
+    <Compile Include="SysManage\SysLog.cs" />
+    <Compile Include="SysManage\SysWebSite.cs" />
+    <Compile Include="SysManage\Top.cs" />
+    <Compile Include="SysManage\User.cs" />
+    <Compile Include="SysManage\UserGropManage.cs" />
+    <Compile Include="SysManage\UserGroup.cs" />
+    <Compile Include="SysManage\UserGroupPermit.cs" />
+    <Compile Include="SysManage\UserGroupRole.cs" />
+    <Compile Include="SysManage\UserRole.cs" />
+    <Compile Include="SysManage\WebSiteTemplate.cs" />
+    <Compile Include="SysManage\WebSiteTemplateNode.cs" />
+    <Compile Include="SysManage\WebSiteTemplatePermit.cs" />
+    <Compile Include="Template\Lable.cs" />
+    <Compile Include="Template\Publish.cs" />
+    <Compile Include="Template\TemplateProject.cs" />
+    <Compile Include="Template\TemplateSkin.cs" />
+    <Compile Include="Types.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KINGTOP.COMMON\KingTop.Common.csproj">
+      <Project>{9F35FFA7-FE46-4CBE-B4AA-94B2190D214A}</Project>
+      <Name>KingTop.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KINGTOP.CONFIG\KingTop.Config.csproj">
+      <Project>{8316DC72-09C5-4EAB-955C-0272BBEA7216}</Project>
+      <Name>KingTop.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KINGTOP.IDAL\KingTop.IDAL.csproj">
+      <Project>{871E0590-16BC-4B53-9C86-F722CBD0C1D8}</Project>
+      <Name>KingTop.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KINGTOP.MODEL\KingTop.Model.csproj">
+      <Project>{A1B665BB-C516-4000-88C6-ECC833921A74}</Project>
+      <Name>KingTop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KINGTOP.SQLSERVER\KingTop.SQLServer.csproj">
+      <Project>{AE0B1BCE-5731-49A9-915A-D7B10E74118A}</Project>
+      <Name>KingTop.SQLServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KingTop.Template\KingTop.Template.csproj">
+      <Project>{E55F7582-D104-43F2-BE5B-F3938744BCFA}</Project>
+      <Name>KingTop.Template</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+</Project>

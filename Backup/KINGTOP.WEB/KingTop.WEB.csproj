@@ -1,0 +1,2502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05C10BB8-0E78-4F4A-937B-58D8F94BF08B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KingTop.WEB</RootNamespace>
+    <AssemblyName>KingTop.WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Common1.designer.cs">
+      <DependentUpon>Common.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Content.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Content.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\FriendLink.en-us1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FriendLink.en-us.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\FriendLink1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FriendLink.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\KeywordFilter1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KeywordFilter.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Member.en-us1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Member.en-us.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Member1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Member.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Model.en-us1.designer.cs">
+      <DependentUpon>Model.en-us.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Model1.designer.cs">
+      <DependentUpon>Model.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Orgin1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Orgin.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.en-us1.designer.cs">
+      <DependentUpon>Resource.en-us.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource1.designer.cs">
+      <DependentUpon>Resource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Trojan1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Trojan.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errorpage.aspx.cs">
+      <DependentUpon>errorpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errorpage.aspx.designer.cs">
+      <DependentUpon>errorpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\App_Code\AdminPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\App_Code\LoginInfoHelper.cs" />
+    <Compile Include="SysAdmin\Categorys\Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Categorys\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Categorys\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Categorys\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Categorys\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Categorys\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Category\typeclassedit.aspx.cs">
+      <DependentUpon>typeclassedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Category\typeclassedit.aspx.designer.cs">
+      <DependentUpon>typeclassedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Category\typeclasslist.aspx.cs">
+      <DependentUpon>typeclasslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Category\typeclasslist.aspx.designer.cs">
+      <DependentUpon>typeclasslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\console\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\console\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\console\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\console\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Controls\Editor.ascx.cs">
+      <DependentUpon>Editor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Controls\Editor.ascx.designer.cs">
+      <DependentUpon>Editor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Controls\PublicOper.ascx.cs">
+      <DependentUpon>PublicOper.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Controls\PublicOper.ascx.designer.cs">
+      <DependentUpon>PublicOper.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\dialogs\attachment\attachment.aspx.cs">
+      <DependentUpon>attachment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\dialogs\attachment\attachment.aspx.designer.cs">
+      <DependentUpon>attachment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\dialogs\background\background.aspx.cs">
+      <DependentUpon>background.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\dialogs\background\background.aspx.designer.cs">
+      <DependentUpon>background.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\dialogs\image\image.aspx.cs">
+      <DependentUpon>image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\dialogs\image\image.aspx.designer.cs">
+      <DependentUpon>image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\dialogs\video\video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\dialogs\video\video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\dialogs\wordimage\wordimage.aspx.cs">
+      <DependentUpon>wordimage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\dialogs\wordimage\wordimage.aspx.designer.cs">
+      <DependentUpon>wordimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\import.aspx.cs">
+      <DependentUpon>import.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\import.aspx.designer.cs">
+      <DependentUpon>import.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\net\udupload.aspx.cs">
+      <DependentUpon>udupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\net\udupload.aspx.designer.cs">
+      <DependentUpon>udupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Editor\ueditor\net\Uploader.cs" />
+    <Compile Include="SysAdmin\HR\HRJobEdit.aspx.cs">
+      <DependentUpon>HRJobEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRJobEdit.aspx.designer.cs">
+      <DependentUpon>HRJobEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRJobList.aspx.cs">
+      <DependentUpon>HRJobList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRJobList.aspx.designer.cs">
+      <DependentUpon>HRJobList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRJobCateEdit.aspx.cs">
+      <DependentUpon>HRJobCateEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRJobCateEdit.aspx.designer.cs">
+      <DependentUpon>HRJobCateEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRJobCateList.aspx.cs">
+      <DependentUpon>HRJobCateList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRJobCateList.aspx.designer.cs">
+      <DependentUpon>HRJobCateList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRResumeList.aspx.cs">
+      <DependentUpon>HRResumeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRResumeList.aspx.designer.cs">
+      <DependentUpon>HRResumeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRApplyJobList.aspx.cs">
+      <DependentUpon>HRApplyJobList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRApplyJobList.aspx.designer.cs">
+      <DependentUpon>HRApplyJobList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRSet.aspx.cs">
+      <DependentUpon>HRSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRSet.aspx.designer.cs">
+      <DependentUpon>HRSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRResumeCountList.aspx.cs">
+      <DependentUpon>HRResumeCountList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\HR\HRResumeCountList.aspx.designer.cs">
+      <DependentUpon>HRResumeCountList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\HR\sendemail.aspx.cs">
+      <DependentUpon>sendemail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\HR\sendemail.aspx.designer.cs">
+      <DependentUpon>sendemail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Member\MemberSet.aspx.cs">
+      <DependentUpon>MemberSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Member\MemberSet.aspx.designer.cs">
+      <DependentUpon>MemberSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Member\MemberEdit.aspx.cs">
+      <DependentUpon>MemberEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Member\MemberEdit.aspx.designer.cs">
+      <DependentUpon>MemberEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Member\MemberList.aspx.cs">
+      <DependentUpon>MemberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Member\MemberList.aspx.designer.cs">
+      <DependentUpon>MemberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\CommonFieldEdit.aspx.cs">
+      <DependentUpon>CommonFieldEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\CommonFieldEdit.aspx.designer.cs">
+      <DependentUpon>CommonFieldEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\CommonFieldGroupEdit.aspx.cs">
+      <DependentUpon>CommonFieldGroupEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\CommonFieldGroupEdit.aspx.designer.cs">
+      <DependentUpon>CommonFieldGroupEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\CommonFieldGroupList.aspx.cs">
+      <DependentUpon>CommonFieldGroupList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\CommonFieldGroupList.aspx.designer.cs">
+      <DependentUpon>CommonFieldGroupList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\CommonFieldList.aspx.cs">
+      <DependentUpon>CommonFieldList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\CommonFieldList.aspx.designer.cs">
+      <DependentUpon>CommonFieldList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ControlManageEdit.aspx.cs">
+      <DependentUpon>ControlManageEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ControlManageEdit.aspx.designer.cs">
+      <DependentUpon>ControlManageEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ControlManageList.aspx.cs">
+      <DependentUpon>ControlManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ControlManageList.aspx.designer.cs">
+      <DependentUpon>ControlManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ControlManageView.aspx.cs">
+      <DependentUpon>ControlManageView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ControlManageView.aspx.designer.cs">
+      <DependentUpon>ControlManageView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\FieldListConfig.aspx.cs">
+      <DependentUpon>FieldListConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\FieldListConfig.aspx.designer.cs">
+      <DependentUpon>FieldListConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\FieldManageEdit.aspx.cs">
+      <DependentUpon>FieldManageEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\FieldManageEdit.aspx.designer.cs">
+      <DependentUpon>FieldManageEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\FieldManageList.aspx.cs">
+      <DependentUpon>FieldManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\FieldManageList.aspx.designer.cs">
+      <DependentUpon>FieldManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelAjaxDeal.asmx.cs">
+      <DependentUpon>ModelAjaxDeal.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelFieldGroupEdit.aspx.cs">
+      <DependentUpon>ModelFieldGroupEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelFieldGroupEdit.aspx.designer.cs">
+      <DependentUpon>ModelFieldGroupEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelFieldGroupList.aspx.cs">
+      <DependentUpon>ModelFieldGroupList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelFieldGroupList.aspx.designer.cs">
+      <DependentUpon>ModelFieldGroupList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelListConfig.aspx.cs">
+      <DependentUpon>ModelListConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelListConfig.aspx.designer.cs">
+      <DependentUpon>ModelListConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelManageCode.aspx.cs">
+      <DependentUpon>ModelManageCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelManageCode.aspx.designer.cs">
+      <DependentUpon>ModelManageCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelManageEdit.aspx.cs">
+      <DependentUpon>ModelManageEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelManageEdit.aspx.designer.cs">
+      <DependentUpon>ModelManageEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelManageList.aspx.cs">
+      <DependentUpon>ModelManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelManageList.aspx.designer.cs">
+      <DependentUpon>ModelManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelMangeCopy.aspx.cs">
+      <DependentUpon>ModelMangeCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Model\ModelMangeCopy.aspx.designer.cs">
+      <DependentUpon>ModelMangeCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Recycling\RecyclingAssociatedEdit.aspx.cs">
+      <DependentUpon>RecyclingAssociatedEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Recycling\RecyclingAssociatedEdit.aspx.designer.cs">
+      <DependentUpon>RecyclingAssociatedEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Recycling\RecyclingAssociatedList.aspx.cs">
+      <DependentUpon>RecyclingAssociatedList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Recycling\RecyclingAssociatedList.aspx.designer.cs">
+      <DependentUpon>RecyclingAssociatedList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Recycling\RecyclingList.aspx.cs">
+      <DependentUpon>RecyclingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Recycling\RecyclingList.aspx.designer.cs">
+      <DependentUpon>RecyclingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Recycling\RecyclingManageEdit.aspx.cs">
+      <DependentUpon>RecyclingManageEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Recycling\RecyclingManageEdit.aspx.designer.cs">
+      <DependentUpon>RecyclingManageEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Recycling\RecyclingManageList.aspx.cs">
+      <DependentUpon>RecyclingManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Recycling\RecyclingManageList.aspx.designer.cs">
+      <DependentUpon>RecyclingManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Single\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Single\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\Single\SinglePageEdit.aspx.cs">
+      <DependentUpon>SinglePageEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\Single\SinglePageEdit.aspx.designer.cs">
+      <DependentUpon>SinglePageEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ActionEdit.aspx.cs">
+      <DependentUpon>ActionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ActionEdit.aspx.designer.cs">
+      <DependentUpon>ActionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ActionList.aspx.cs">
+      <DependentUpon>ActionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ActionList.aspx.designer.cs">
+      <DependentUpon>ActionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\AspxToHtml.aspx.cs">
+      <DependentUpon>AspxToHtml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\AspxToHtml.aspx.designer.cs">
+      <DependentUpon>AspxToHtml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\AspxToHtml_Publish.cs" />
+    <Compile Include="SysAdmin\SysManage\ColumnCopy.aspx.cs">
+      <DependentUpon>ColumnCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ColumnCopy.aspx.designer.cs">
+      <DependentUpon>ColumnCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ColumnEdit.aspx.cs">
+      <DependentUpon>ColumnEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ColumnEdit.aspx.designer.cs">
+      <DependentUpon>ColumnEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ColumnManage.aspx.cs">
+      <DependentUpon>ColumnManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ColumnManage.aspx.designer.cs">
+      <DependentUpon>ColumnManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ColumnMove.aspx.cs">
+      <DependentUpon>ColumnMove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ColumnMove.aspx.designer.cs">
+      <DependentUpon>ColumnMove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ColumnUnite.aspx.cs">
+      <DependentUpon>ColumnUnite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ColumnUnite.aspx.designer.cs">
+      <DependentUpon>ColumnUnite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\DataBaseBackUp.aspx.cs">
+      <DependentUpon>DataBaseBackUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\DataBaseBackUp.aspx.designer.cs">
+      <DependentUpon>DataBaseBackUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\DataBaseRestore.aspx.cs">
+      <DependentUpon>DataBaseRestore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\DataBaseRestore.aspx.designer.cs">
+      <DependentUpon>DataBaseRestore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ModelEdit.aspx.cs">
+      <DependentUpon>ModelEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ModelEdit.aspx.designer.cs">
+      <DependentUpon>ModelEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ModelList.aspx.cs">
+      <DependentUpon>ModelList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ModelList.aspx.designer.cs">
+      <DependentUpon>ModelList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ModelNodeEdit.aspx.cs">
+      <DependentUpon>ModelNodeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ModelNodeEdit.aspx.designer.cs">
+      <DependentUpon>ModelNodeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ModelNodeList.aspx.cs">
+      <DependentUpon>ModelNodeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\ModelNodeList.aspx.designer.cs">
+      <DependentUpon>ModelNodeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\NewWebSet.aspx.cs">
+      <DependentUpon>NewWebSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\NewWebSet.aspx.designer.cs">
+      <DependentUpon>NewWebSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\NewWebSetMenuEdit.aspx.cs">
+      <DependentUpon>NewWebSetMenuEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\NewWebSetMenuEdit.aspx.designer.cs">
+      <DependentUpon>NewWebSetMenuEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\OutLinkColumn.aspx.cs">
+      <DependentUpon>OutLinkColumn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\OutLinkColumn.aspx.designer.cs">
+      <DependentUpon>OutLinkColumn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\OutLinkShow.aspx.cs">
+      <DependentUpon>OutLinkShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\OutLinkShow.aspx.designer.cs">
+      <DependentUpon>OutLinkShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\PostSet.aspx.cs">
+      <DependentUpon>PostSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\PostSet.aspx.designer.cs">
+      <DependentUpon>PostSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\PublicOperEdit.aspx.cs">
+      <DependentUpon>PublicOperEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\PublicOperEdit.aspx.designer.cs">
+      <DependentUpon>PublicOperEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\PublicOperList.aspx.cs">
+      <DependentUpon>PublicOperList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\PublicOperList.aspx.designer.cs">
+      <DependentUpon>PublicOperList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\RoleEdit.aspx.cs">
+      <DependentUpon>RoleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\RoleEdit.aspx.designer.cs">
+      <DependentUpon>RoleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\RoleList.aspx.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\RoleList.aspx.designer.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\RolePermit.aspx.cs">
+      <DependentUpon>RolePermit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\RolePermit.aspx.designer.cs">
+      <DependentUpon>RolePermit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SingleColumn.aspx.cs">
+      <DependentUpon>SingleColumn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SingleColumn.aspx.designer.cs">
+      <DependentUpon>SingleColumn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SiteInfoSet.aspx.cs">
+      <DependentUpon>SiteInfoSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SiteInfoSet.aspx.designer.cs">
+      <DependentUpon>SiteInfoSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SiteParamSet.aspx.cs">
+      <DependentUpon>SiteParamSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SiteParamSet.aspx.designer.cs">
+      <DependentUpon>SiteParamSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SysLog.aspx.cs">
+      <DependentUpon>SysLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SysLog.aspx.designer.cs">
+      <DependentUpon>SysLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SysUserChangePassword.aspx.cs">
+      <DependentUpon>SysUserChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SysUserChangePassword.aspx.designer.cs">
+      <DependentUpon>SysUserChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SysUserEdit.aspx.cs">
+      <DependentUpon>SysUserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SysUserEdit.aspx.designer.cs">
+      <DependentUpon>SysUserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SysUserList.aspx.cs">
+      <DependentUpon>SysUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SysUserList.aspx.designer.cs">
+      <DependentUpon>SysUserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SysUserRight.aspx.cs">
+      <DependentUpon>SysUserRight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\SysUserRight.aspx.designer.cs">
+      <DependentUpon>SysUserRight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\TemplateEdit.aspx.cs">
+      <DependentUpon>TemplateEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\TemplateEdit.aspx.designer.cs">
+      <DependentUpon>TemplateEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\TemplateManage.aspx.cs">
+      <DependentUpon>TemplateManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\TemplateManage.aspx.designer.cs">
+      <DependentUpon>TemplateManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\TemplateNodeEdit.aspx.cs">
+      <DependentUpon>TemplateNodeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\TemplateNodeEdit.aspx.designer.cs">
+      <DependentUpon>TemplateNodeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\TemplateNodeManage.aspx.cs">
+      <DependentUpon>TemplateNodeManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\TemplateNodeManage.aspx.designer.cs">
+      <DependentUpon>TemplateNodeManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\TemplatePermit.aspx.cs">
+      <DependentUpon>TemplatePermit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\TemplatePermit.aspx.designer.cs">
+      <DependentUpon>TemplatePermit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\UploadSet.aspx.cs">
+      <DependentUpon>UploadSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\UploadSet.aspx.designer.cs">
+      <DependentUpon>UploadSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\UserGropEdit.aspx.cs">
+      <DependentUpon>UserGropEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\UserGropEdit.aspx.designer.cs">
+      <DependentUpon>UserGropEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\UserGropList.aspx.cs">
+      <DependentUpon>UserGropList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\UserGropList.aspx.designer.cs">
+      <DependentUpon>UserGropList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\UserGropPermit.aspx.cs">
+      <DependentUpon>UserGropPermit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\UserGropPermit.aspx.designer.cs">
+      <DependentUpon>UserGropPermit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\WebSiteManage.aspx.cs">
+      <DependentUpon>WebSiteManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SysManage\WebSiteManage.aspx.designer.cs">
+      <DependentUpon>WebSiteManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\batchupload.aspx.cs">
+      <DependentUpon>batchupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\batchupload.aspx.designer.cs">
+      <DependentUpon>batchupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\BrowseUploaded.aspx.cs">
+      <DependentUpon>BrowseUploaded.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\BrowseUploaded.aspx.designer.cs">
+      <DependentUpon>BrowseUploaded.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\ckeditorupload.aspx.cs">
+      <DependentUpon>ckeditorupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\ckeditorupload.aspx.designer.cs">
+      <DependentUpon>ckeditorupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\FileManage\FileForderInfo.cs" />
+    <Compile Include="SysAdmin\upfiles\FileManage\FileManagerProcessor.cs" />
+    <Compile Include="SysAdmin\upfiles\FileManage\filesmanage.aspx.cs">
+      <DependentUpon>filesmanage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\FileManage\filesmanage.aspx.designer.cs">
+      <DependentUpon>filesmanage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\FlashImageUpload\ImageUpload.aspx.cs">
+      <DependentUpon>ImageUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\FlashImageUpload\upimage.aspx.cs">
+      <DependentUpon>upimage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\FlashImageUpload\upimage.aspx.designer.cs">
+      <DependentUpon>upimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\showimage\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\showimage\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\UploadBase.cs" />
+    <Compile Include="SysAdmin\upfiles\uploadify\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\uploadify\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\uploadify\editupload.aspx.cs">
+      <DependentUpon>editupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\uploadify\editupload.aspx.designer.cs">
+      <DependentUpon>editupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\upfiles\uploadify\Upload.ashx.cs">
+      <DependentUpon>Upload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\ValidateCode.aspx.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\ValidateCode.aspx.designer.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ueditor\net\Uploader.cs" />
+    <Compile Include="uploadify\Upload.ashx.cs">
+      <DependentUpon>Upload.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404cn.jpg" />
+    <Content Include="Calendar\calendar.js" />
+    <Content Include="Calendar\DeskCalendar.js" />
+    <Content Include="Calendar\lang\en.js" />
+    <Content Include="Calendar\lang\zh-cn.js" />
+    <Content Include="Calendar\lang\zh-tw.js" />
+    <Content Include="Calendar\skin\datePicker.gif" />
+    <Content Include="Calendar\skin\default\datepicker.css" />
+    <Content Include="Calendar\skin\default\img.gif" />
+    <Content Include="Calendar\skin\DeskCanlendar.css" />
+    <Content Include="Calendar\skin\WdatePicker.css" />
+    <Content Include="Calendar\skin\whyGreen\bg.jpg" />
+    <Content Include="Calendar\skin\whyGreen\datepicker.css" />
+    <Content Include="Calendar\skin\whyGreen\img.gif" />
+    <Content Include="Calendar\WdatePicker.js" />
+    <Content Include="errorpage.aspx" />
+    <Content Include="Global.asax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SysAdmin\Calendar\calendar.js" />
+    <Content Include="SysAdmin\Calendar\DeskCalendar.js" />
+    <Content Include="SysAdmin\Calendar\lang\en.js" />
+    <Content Include="SysAdmin\Calendar\lang\zh-cn.js" />
+    <Content Include="SysAdmin\Calendar\lang\zh-tw.js" />
+    <Content Include="SysAdmin\Calendar\skin\datePicker.gif" />
+    <Content Include="SysAdmin\Calendar\skin\default\datepicker.css" />
+    <Content Include="SysAdmin\Calendar\skin\default\img.gif" />
+    <Content Include="SysAdmin\Calendar\skin\DeskCanlendar.css" />
+    <Content Include="SysAdmin\Calendar\skin\WdatePicker.css" />
+    <Content Include="SysAdmin\Calendar\skin\whyGreen\bg.jpg" />
+    <Content Include="SysAdmin\Calendar\skin\whyGreen\datepicker.css" />
+    <Content Include="SysAdmin\Calendar\skin\whyGreen\img.gif" />
+    <Content Include="SysAdmin\Calendar\WdatePicker.js" />
+    <Content Include="SysAdmin\Categorys\Category.aspx" />
+    <Content Include="SysAdmin\Categorys\Category.js" />
+    <Content Include="SysAdmin\Categorys\Edit.aspx" />
+    <Content Include="SysAdmin\Categorys\List.aspx" />
+    <Content Include="SysAdmin\Category\typeclassedit.aspx" />
+    <Content Include="SysAdmin\Category\typeclasslist.aspx" />
+    <Content Include="SysAdmin\console\foot.htm" />
+    <Content Include="SysAdmin\console\index.aspx" />
+    <Content Include="SysAdmin\console\Main.aspx" />
+    <Content Include="SysAdmin\Controls\Editor.ascx" />
+    <Content Include="SysAdmin\Controls\PublicOper.ascx" />
+    <Content Include="SysAdmin\css\dialog.css" />
+    <Content Include="SysAdmin\css\login.css" />
+    <Content Include="SysAdmin\css\public.css" />
+    <Content Include="SysAdmin\css\style1.css" />
+    <Content Include="SysAdmin\css\ustyle.css" />
+    <Content Include="SysAdmin\css\validationEngine.css" />
+    <Content Include="SysAdmin\css\validationEngine.jquery.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\adapters\jquery.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\ckeditor.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\config.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\contents.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\images\spacer.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\lang\en.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\lang\zh-cn.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\lang\zh.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\lang\_languages.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\about\dialogs\about.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\adobeair\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\ajax\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\autogrow\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\blockquote\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\codeblock\dialogs\codeblock.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\codeblock\images\codeblock.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\codeblock\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\div\dialogs\div.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\div\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\docprops\dialogs\docprops.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\docprops\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\find\dialogs\find.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\flash\images\placeholder.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\forms\dialogs\button.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\forms\dialogs\form.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\forms\dialogs\select.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\forms\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\horizontalrule\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\iframedialog\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\image\dialogs\image.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\link\dialogs\link.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\link\images\anchor.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\media\dialogs\media.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\media\images\media.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\media\images\placeholder.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\media\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\media\swf\player_flv_maxi.swf" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\pagebreak\dialogs\pagebreak.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\pagebreak\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\pastefromword\dialogs\pastefromword.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\placeholder\dialogs\placeholder.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\placeholder\lang\en.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\placeholder\lang\he.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\placeholder\placeholder.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\placeholder\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\showblocks\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\heart.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\smiley\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\specialchar\lang\en.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\specialchar\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\stylescombo\styles\default.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\stylesheetparser\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\styles\styles\default.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\tableresize\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\table\dialogs\table.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\templates\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\templates\templates\default.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\uicolor\lang\en.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\uicolor\lang\he.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\uicolor\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\uicolor\uicolor.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\uicolor\yui\yui.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\plugins\xml\plugin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\Popup.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\dialog.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\editor.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\icons.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\images\dialog_sides.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\images\dialog_sides.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\images\dialog_sides_rtl.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\images\function_bg.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\images\mini.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\images\noimage.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\images\sprites.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\images\sprites_ie6.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\skin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\blue\templates.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\dialog.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\editor.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\icons.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\images\dialog_sides.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\images\dialog_sides.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\images\dialog_sides_rtl.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\images\function_bg.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\images\mini.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\images\noimage.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\images\sprites.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\images\sprites_ie6.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\skin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\green\templates.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\dialog.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\editor.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\icons.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\icons_rtl.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\images\dialog_sides.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\images\mini.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\images\noimage.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\images\sprites.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\skin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\kama\templates.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\dialog.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\editor.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\icons.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\icons_rtl.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\images\dialog_sides.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\images\mini.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\images\noimage.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\images\sprites.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\skin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\office2003\templates.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\dialog.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\editor.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\icons.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\icons_rtl.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\images\dialog_sides.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\images\dialog_sides.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\images\mini.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\images\noimage.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\images\sprites.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\images\sprites_ie6.png" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\images\toolbar_start.gif" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\skin.js" />
+    <Content Include="SysAdmin\Editor\CKEditor\skins\v2\templates.css" />
+    <Content Include="SysAdmin\Editor\CKEditor\themes\default\theme.js" />
+    <Content Include="SysAdmin\Editor\ueditor\CHANGELOG.TXT" />
+    <Content Include="SysAdmin\Editor\ueditor\default.aspx" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\anchor\anchor.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\attachment.aspx" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\attachment.css" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\attachment.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\callbacks.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\attachment\fileTypeMaps.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\background\background.aspx" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\background\background.css" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\background\background.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\background\background.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\background\wordimage.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\emotion.css" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\emotion.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\emotion.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\0.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0001.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0002.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0003.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0004.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0005.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0006.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0007.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0008.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0009.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0010.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0011.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0012.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0013.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0014.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0015.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0016.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0017.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0018.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0019.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\babycat\C_0020.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0001.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0002.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0003.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0004.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0005.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0006.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0007.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0008.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0009.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0010.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0011.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0012.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0013.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0014.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0015.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0016.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0017.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0018.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0019.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0020.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0021.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0022.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0023.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0024.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0025.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0026.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0027.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0028.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0029.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0030.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0031.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0032.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0033.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0034.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0035.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0036.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0037.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0038.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0039.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0040.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0041.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0042.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0043.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0044.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0045.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0046.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0047.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0048.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0049.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0050.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0051.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0052.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0053.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0054.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0055.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0056.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0057.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0058.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0059.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0060.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0061.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0062.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\bobo\b_0063.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_01.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_02.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_03.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_04.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_05.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_06.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_07.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_08.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_09.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_10.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_11.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_12.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_13.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_14.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_15.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_16.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_17.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_18.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_19.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_20.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_21.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_22.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_23.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_24.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_25.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_26.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_27.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_28.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_29.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_30.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_31.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_32.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_33.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_34.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_35.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_36.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_37.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_38.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_39.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_40.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_41.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_42.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_43.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_44.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_45.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_46.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_47.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_48.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_49.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\face\i_f_50.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0001.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0002.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0003.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0004.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0005.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0006.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0007.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0008.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0009.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0010.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0011.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0012.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0013.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0014.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0015.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0016.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0017.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0018.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0019.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0020.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0021.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0022.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0023.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0024.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0025.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0026.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0027.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0028.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0029.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0030.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0031.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0032.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0033.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0034.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0035.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0036.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0037.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0038.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0039.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0040.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0041.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0042.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0043.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0044.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0045.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0046.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0047.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0048.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0049.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0050.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0051.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0052.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0053.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0054.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0055.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0056.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0057.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0058.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0059.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0060.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0061.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0062.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0063.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0064.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0065.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0066.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0067.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0068.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0069.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0070.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0071.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0072.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0073.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0074.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0075.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0076.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0077.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0078.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0079.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0080.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0081.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0082.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0083.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jx2\j_0084.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0001.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0002.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0003.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0004.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0005.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0006.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0007.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0008.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0009.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0010.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0011.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0012.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0013.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0014.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0015.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0016.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0017.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0018.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0019.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0020.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0021.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0022.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0023.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0024.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0025.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0026.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0027.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0028.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0029.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0030.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0031.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0032.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0033.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0034.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0035.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0036.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0037.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0038.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0039.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0040.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0041.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0042.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0043.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0044.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0045.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0046.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0047.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0048.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0049.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0050.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0051.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\ldw\w_0052.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0001.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0002.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0003.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0004.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0005.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0006.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0007.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0008.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0009.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0010.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0011.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0012.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0013.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0014.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0015.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0016.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0017.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0018.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0019.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0020.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0021.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0022.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0023.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0024.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0025.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0026.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0027.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0028.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0029.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0030.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0031.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0032.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0033.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0034.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0035.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0036.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0037.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0038.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0039.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\tsj\t_0040.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0001.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0002.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0003.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0004.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0005.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0006.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0007.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0008.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0009.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0010.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0011.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0012.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0013.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0014.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0015.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0016.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0017.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0018.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0019.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0020.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0021.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0022.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0023.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0024.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0025.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0026.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0027.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0028.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0029.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0030.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0031.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0032.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0033.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0034.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0035.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0036.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0037.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0038.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0039.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\emotion\images\youa\y_0040.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\gmap\gmap.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\help\help.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\highlightcode\highlightcode.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\image\image.aspx" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\image\image.css" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\image\image.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\image\image.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\image\imageUploader.swf" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\internal.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\link\link.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\map\map.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\size.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\spechars\spechars.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\table\edittd.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\table\table.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\table\table.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\tangram.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\template\config.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\template\images\bg.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\template\images\pre0.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\template\images\pre1.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\template\images\pre2.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\template\images\pre3.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\template\images\pre4.png" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\template\template.css" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\template\template.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\template\template.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\7z.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\asf.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\asp.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\asx.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\bmp.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\chm.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\do.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\doc.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\docx.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\exe.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\flv.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\folder.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\gif.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\hlp.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\htm.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\html.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\jpeg.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\jpg.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\js.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\mid.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\midi.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\mp3.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\mpeg.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\mpg.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\other.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\pdf.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\php.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\png.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\psd.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\rar.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\rm.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\rmvb.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\shtml.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\swf.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\tif.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\txt.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\wav.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\xls.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\xlsx.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\xml.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\ext2\zip.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\folderback.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\Style.css" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\video.aspx" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\video.css" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\video.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\video\video.js" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\webapp\webapp.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\wordimage\wordimage.aspx" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="SysAdmin\Editor\ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="SysAdmin\Editor\ueditor\editor_all.js" />
+    <Content Include="SysAdmin\Editor\ueditor\editor_all_min.js" />
+    <Content Include="SysAdmin\Editor\ueditor\editor_config.js" />
+    <Content Include="SysAdmin\Editor\ueditor\import.aspx" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\en.js" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\addImage.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\allDeleteBtnHoverSkin.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\allDeleteBtnUpSkin.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\background.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\button.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\copy.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\deleteDisable.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\deleteEnable.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\imgLable.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\listBackground.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\localimage.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\rotateLeftDisable.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\rotateLeftEnable.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\rotateRightDisable.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\rotateRightEnable.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\en\images\upload.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\zh-CN\images\copy.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\zh-CN\images\imgLable.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\zh-CN\images\localimage.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\zh-CN\images\upload.png" />
+    <Content Include="SysAdmin\Editor\ueditor\lang\zh-CN\zh-CN.js" />
+    <Content Include="SysAdmin\Editor\ueditor\net\udupload.aspx" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\iframe.css" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\anchor.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\arrow.png" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\button-bg.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\center_focus.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\fileScan.png" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\icons-all.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\icons.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\icons.png" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\left.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\left_focus.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\lock.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\logo.png" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\menu\sparator_v.png" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\none.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\none_focus.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\pagebreak.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\right.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\right_focus.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\spacer.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\tablepicker\highlighted.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\tablepicker\unhighlighted.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\topbottom.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\topbottom_focus.jpg" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\upload.png" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\videologo.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\images\word.gif" />
+    <Content Include="SysAdmin\Editor\ueditor\themes\default\ueditor.css" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\codemirror2.15\codemirror.css" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\codemirror2.15\codemirror.js" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\snapscreen\setup.exe" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\snapscreen\Snapsie.dll" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\snapscreen\test.html" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\snapscreen\user_manual.txt" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\swfupload\fileprogress.js" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\swfupload\swfupload.cookies.js" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\swfupload\swfupload.js" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\swfupload\swfupload.proxy.js" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\swfupload\swfupload.queue.js" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\swfupload\swfupload.speed.js" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\swfupload\swfupload.swf" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\swfupload\swfupload_fp9.swf" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="SysAdmin\Editor\ueditor\说明.txt" />
+    <Content Include="SysAdmin\HR\HRJobEdit.aspx" />
+    <Content Include="SysAdmin\HR\HRJobList.aspx" />
+    <Content Include="SysAdmin\HR\HRJobCateEdit.aspx" />
+    <Content Include="SysAdmin\HR\HRJobCateList.aspx" />
+    <Content Include="SysAdmin\HR\HRResumeList.aspx" />
+    <Content Include="SysAdmin\HR\HRApplyJobList.aspx" />
+    <Content Include="SysAdmin\HR\HRSet.aspx" />
+    <Content Include="SysAdmin\HR\HRResumeCountList.aspx" />
+    <Content Include="SysAdmin\HR\sendemail.aspx" />
+    <Content Include="SysAdmin\images\action.gif" />
+    <Content Include="SysAdmin\images\bg_top.jpg" />
+    <Content Include="SysAdmin\images\btnButton.png" />
+    <Content Include="SysAdmin\images\checkbox.gif" />
+    <Content Include="SysAdmin\images\close.png" />
+    <Content Include="SysAdmin\images\color.png" />
+    <Content Include="SysAdmin\images\dbbak1.jpg" />
+    <Content Include="SysAdmin\images\dbbak2.jpg" />
+    <Content Include="SysAdmin\images\dialogImage\background.png" />
+    <Content Include="SysAdmin\images\dialogImage\close.png" />
+    <Content Include="SysAdmin\images\dialogImage\dialogbutton.png" />
+    <Content Include="SysAdmin\images\dialogImage\error.png" />
+    <Content Include="SysAdmin\images\dialogImage\iconAlert.gif" />
+    <Content Include="SysAdmin\images\dialogImage\iconquery.gif" />
+    <Content Include="SysAdmin\images\dialogImage\margins.png" />
+    <Content Include="SysAdmin\images\dialogImage\pitch.png" />
+    <Content Include="SysAdmin\images\dialogImage\succ.png" />
+    <Content Include="SysAdmin\images\DTree\base.png" />
+    <Content Include="SysAdmin\images\DTree\cancel.gif" />
+    <Content Include="SysAdmin\images\DTree\cd.gif" />
+    <Content Include="SysAdmin\images\DTree\del.gif" />
+    <Content Include="SysAdmin\images\DTree\edit.gif" />
+    <Content Include="SysAdmin\images\DTree\empty.gif" />
+    <Content Include="SysAdmin\images\DTree\file.gif" />
+    <Content Include="SysAdmin\images\DTree\folderclosed.gif" />
+    <Content Include="SysAdmin\images\DTree\folderopen.gif" />
+    <Content Include="SysAdmin\images\DTree\globe.gif" />
+    <Content Include="SysAdmin\images\DTree\hline.gif" />
+    <Content Include="SysAdmin\images\DTree\imgfolder.gif" />
+    <Content Include="SysAdmin\images\DTree\join.gif" />
+    <Content Include="SysAdmin\images\DTree\joinbottom.gif" />
+    <Content Include="SysAdmin\images\DTree\line.gif" />
+    <Content Include="SysAdmin\images\DTree\minus.gif" />
+    <Content Include="SysAdmin\images\DTree\minusbottom.gif" />
+    <Content Include="SysAdmin\images\DTree\musicfolder.gif" />
+    <Content Include="SysAdmin\images\DTree\nolines_minus.gif" />
+    <Content Include="SysAdmin\images\DTree\nolines_plus.gif" />
+    <Content Include="SysAdmin\images\DTree\page.gif" />
+    <Content Include="SysAdmin\images\DTree\page3.gif" />
+    <Content Include="SysAdmin\images\DTree\plus.gif" />
+    <Content Include="SysAdmin\images\DTree\plusbottom.gif" />
+    <Content Include="SysAdmin\images\DTree\question.gif" />
+    <Content Include="SysAdmin\images\DTree\save.gif" />
+    <Content Include="SysAdmin\images\DTree\trash.gif" />
+    <Content Include="SysAdmin\images\DTree\treeview-black-line.gif" />
+    <Content Include="SysAdmin\images\DTree\treeview-black.gif" />
+    <Content Include="SysAdmin\images\DTree\treeview-default-line.gif" />
+    <Content Include="SysAdmin\images\DTree\treeview-default.gif" />
+    <Content Include="SysAdmin\images\DTree\treeview-famfamfam-line.gif" />
+    <Content Include="SysAdmin\images\DTree\treeview-famfamfam.gif" />
+    <Content Include="SysAdmin\images\DTree\treeview-gray-line.gif" />
+    <Content Include="SysAdmin\images\DTree\treeview-gray.gif" />
+    <Content Include="SysAdmin\images\DTree\treeview-red-line.gif" />
+    <Content Include="SysAdmin\images\DTree\treeview-red.gif" />
+    <Content Include="SysAdmin\images\excel.jpg" />
+    <Content Include="SysAdmin\images\folder.gif" />
+    <Content Include="SysAdmin\images\headerBackground.png" />
+    <Content Include="SysAdmin\images\help.jpg" />
+    <Content Include="SysAdmin\images\home.jpg" />
+    <Content Include="SysAdmin\images\inputbg.png" />
+    <Content Include="SysAdmin\images\leftmenutitle.png" />
+    <Content Include="SysAdmin\images\loader.gif" />
+    <Content Include="SysAdmin\images\loading.gif" />
+    <Content Include="SysAdmin\images\loginbody.png" />
+    <Content Include="SysAdmin\images\loginContainer.jpg" />
+    <Content Include="SysAdmin\images\loginContainer.png" />
+    <Content Include="SysAdmin\images\logindiv.png" />
+    <Content Include="SysAdmin\images\loginsub.png" />
+    <Content Include="SysAdmin\images\loginwebbg.png" />
+    <Content Include="SysAdmin\images\logo.png" />
+    <Content Include="SysAdmin\images\logo1.png" />
+    <Content Include="SysAdmin\images\max.png" />
+    <Content Include="SysAdmin\images\menu2.png" />
+    <Content Include="SysAdmin\images\menu3.png" />
+    <Content Include="SysAdmin\images\min.png" />
+    <Content Include="SysAdmin\images\move.png" />
+    <Content Include="SysAdmin\images\msgtitlebackground.png" />
+    <Content Include="SysAdmin\images\navicon.gif" />
+    <Content Include="SysAdmin\images\NoPic.jpg" />
+    <Content Include="SysAdmin\images\path.png" />
+    <Content Include="SysAdmin\images\pen.gif" />
+    <Content Include="SysAdmin\images\radioChecked.gif" />
+    <Content Include="SysAdmin\images\select.png" />
+    <Content Include="SysAdmin\images\tab1.jpg" />
+    <Content Include="SysAdmin\images\tab2.jpg" />
+    <Content Include="SysAdmin\images\title.png" />
+    <Content Include="SysAdmin\images\ulheadbg.png" />
+    <Content Include="SysAdmin\images\unchecked.gif" />
+    <Content Include="SysAdmin\images\unRadioChecked.gif" />
+    <Content Include="SysAdmin\images\Water.png" />
+    <Content Include="SysAdmin\images\zhuxiao.jpg" />
+    <Content Include="SysAdmin\js\Common.js" />
+    <Content Include="SysAdmin\js\ControlManageEdit.js" />
+    <Content Include="SysAdmin\js\ControlManageList.js" />
+    <Content Include="SysAdmin\js\ControlManageView.js" />
+    <Content Include="SysAdmin\js\DTree.js" />
+    <Content Include="SysAdmin\js\FieldManage.js" />
+    <Content Include="SysAdmin\js\jquery-1.4.2.min.js" />
+    <Content Include="SysAdmin\js\jquery-ui-1.8.14.custom.min.js" />
+    <Content Include="SysAdmin\js\jquery-validationEngine-cn.js" />
+    <Content Include="SysAdmin\js\jquery-validationEngine-en.js" />
+    <Content Include="SysAdmin\js\jquery-validationEngine.js" />
+    <Content Include="SysAdmin\js\jquery.cookie.js" />
+    <Content Include="SysAdmin\js\jquery.dialog.js" />
+    <Content Include="SysAdmin\js\jquery.ui.draggable.js" />
+    <Content Include="SysAdmin\js\jquery.ui.form.select.js" />
+    <Content Include="SysAdmin\js\listcheck.js" />
+    <Content Include="SysAdmin\js\ModelFieldAlbums.js" />
+    <Content Include="SysAdmin\js\ModelManage.js" />
+    <Content Include="SysAdmin\js\public.js" />
+    <Content Include="SysAdmin\js\ui.core.js" />
+    <Content Include="SysAdmin\js\ui.sortable.js" />
+    <Content Include="SysAdmin\js\win.js" />
+    <Content Include="SysAdmin\js\XmlFunction.js" />
+    <Content Include="SysAdmin\js\commonsort.js" />
+    <Content Include="SysAdmin\js\listchecksort.js" />
+    <Content Include="SysAdmin\lib\json2.js" />
+    <Content Include="SysAdmin\lib\ligerUI\js\ligerui.min.js" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\css\ligerui-all.css" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-btn-done.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-btn-error.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-btn-l-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-btn-l.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-btn-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-btn-question.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-btn-r-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-btn-r.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-btn-warn.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-btn.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-close-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-close.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-lefttop.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-righttop.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\box-top.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\tabs-item-left-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\bg-panel-title-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\bg-panel-title-pressed.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\bg-panel-title.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\bg-tab-title-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\bg-tab-title-pressed.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\bg-tab-title.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\bg-text.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\bg-text.jpg" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\bg-trigger-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\bg-trigger-pressed.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\bg-trigger.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\button-bg-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\button-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\checkbox.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\checkboxandradio.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\dateeditor-bar-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\dateeditor-header-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\radio.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\box-lefttop.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\box-righttop.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\grid-detail-close.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\grid-detail-open.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\grid-line.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\header-bg-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\header-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\loading.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\popup-line.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\popup-row-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\popup-row-over.png" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\bar-button-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-close-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-close.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-close18X18.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-discuss15X15.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-discuss16X16.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-discuss32X32.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-done15X15.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-done16X16.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-done32X32.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-down.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-drop.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-edited.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-first.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-last.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-line.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-load.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-load.png" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-milestone15X15.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-next.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-prev.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-remark15X15.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-remark16X16.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-remark32X32.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-sort-asc.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-sort-desc.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-up.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-warn15X15.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-warn16X16.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\icon-warn32X32.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\magnifier.png" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\accordion-content.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\accordion-header-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\accordion-header.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\layout-header-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\layout-header.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\layout-sidebar-header.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\mini-bottom.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\mini-left.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\mini-right.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\mini-top.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\panel-content.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\panel-header-over.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\panel-header.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\tabs-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\tabs-btns.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\tabs-item-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\tabs-item-left-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\tabs-item-over-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\tabs-item-right-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\togglebar.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\togglebar.png" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\panel\bar-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\panel\header-bg.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\panel\panel-header.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\panel\panel-tools.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\sketch_eps_zcool.com.cn.png" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\tree\folder-open.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\tree\folder.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\tree\tree-level.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\tree\tree-status-close.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\tree\tree-status-open.gif" />
+    <Content Include="SysAdmin\lib\ligerUI\skins\Aqua\images\tree\tree-status.gif" />
+    <Content Include="SysAdmin\lib\style.css" />
+    <Content Include="SysAdmin\LogOut.aspx" />
+    <Content Include="SysAdmin\Member\MemberSet.aspx" />
+    <Content Include="SysAdmin\Member\MemberEdit.aspx" />
+    <Content Include="SysAdmin\Member\MemberList.aspx" />
+    <Content Include="SysAdmin\Model\CommonFieldEdit.aspx" />
+    <Content Include="SysAdmin\Model\CommonFieldGroupEdit.aspx" />
+    <Content Include="SysAdmin\Model\CommonFieldGroupList.aspx" />
+    <Content Include="SysAdmin\Model\CommonFieldList.aspx" />
+    <Content Include="SysAdmin\Model\ControlManageEdit.aspx" />
+    <Content Include="SysAdmin\Model\ControlManageEditTemplate.aspx" />
+    <Content Include="SysAdmin\Model\ControlManageList.aspx" />
+    <Content Include="SysAdmin\Model\ControlManageListTemplate.aspx" />
+    <Content Include="SysAdmin\Model\ControlManageView.aspx" />
+    <Content Include="SysAdmin\Model\ControlManageViewTemplate.aspx" />
+    <Content Include="SysAdmin\Model\FieldListConfig.aspx" />
+    <Content Include="SysAdmin\Model\FieldManageEdit.aspx" />
+    <Content Include="SysAdmin\Model\FieldManageList.aspx" />
+    <Content Include="SysAdmin\Model\ModelAjaxDeal.asmx" />
+    <Content Include="SysAdmin\Model\ModelFieldGroupEdit.aspx" />
+    <Content Include="SysAdmin\Model\ModelFieldGroupList.aspx" />
+    <Content Include="SysAdmin\Model\ModelListConfig.aspx" />
+    <Content Include="SysAdmin\Model\ModelManageCode.aspx" />
+    <Content Include="SysAdmin\Model\ModelManageEdit.aspx" />
+    <Content Include="SysAdmin\Model\ModelManageList.aspx" />
+    <Content Include="SysAdmin\Model\ModelMangeCopy.aspx" />
+    <Content Include="SysAdmin\Recycling\RecyclingAssociatedEdit.aspx" />
+    <Content Include="SysAdmin\Recycling\RecyclingAssociatedList.aspx" />
+    <Content Include="SysAdmin\Recycling\RecyclingList.aspx" />
+    <Content Include="SysAdmin\Recycling\RecyclingManageEdit.aspx" />
+    <Content Include="SysAdmin\Recycling\RecyclingManageList.aspx" />
+    <Content Include="SysAdmin\Single\default.aspx" />
+    <Content Include="SysAdmin\Single\SinglePageEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\ActionEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\ActionList.aspx" />
+    <Content Include="SysAdmin\SysManage\AspxToHtml.aspx" />
+    <Content Include="SysAdmin\SysManage\ColumnCopy.aspx" />
+    <Content Include="SysAdmin\SysManage\ColumnEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\ColumnManage.aspx" />
+    <Content Include="SysAdmin\SysManage\ColumnMove.aspx" />
+    <Content Include="SysAdmin\SysManage\ColumnUnite.aspx" />
+    <Content Include="SysAdmin\SysManage\DataBaseBackUp.aspx" />
+    <Content Include="SysAdmin\SysManage\DataBaseRestore.aspx" />
+    <Content Include="SysAdmin\SysManage\ModelEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\ModelList.aspx" />
+    <Content Include="SysAdmin\SysManage\ModelNodeEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\ModelNodeList.aspx" />
+    <Content Include="SysAdmin\SysManage\NewWebSet.aspx" />
+    <Content Include="SysAdmin\SysManage\NewWebSetMenuEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\OutLinkColumn.aspx" />
+    <Content Include="SysAdmin\SysManage\OutLinkShow.aspx" />
+    <Content Include="SysAdmin\SysManage\PostSet.aspx" />
+    <Content Include="SysAdmin\SysManage\PublicOperEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\PublicOperList.aspx" />
+    <Content Include="SysAdmin\SysManage\RoleEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\RoleList.aspx" />
+    <Content Include="SysAdmin\SysManage\RolePermit.aspx" />
+    <Content Include="SysAdmin\SysManage\SingleColumn.aspx" />
+    <Content Include="SysAdmin\SysManage\SiteInfoSet.aspx" />
+    <Content Include="SysAdmin\SysManage\SiteParamSet.aspx" />
+    <Content Include="SysAdmin\SysManage\SysLog.aspx" />
+    <Content Include="SysAdmin\SysManage\SysUserChangePassword.aspx" />
+    <Content Include="SysAdmin\SysManage\SysUserEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\SysUserList.aspx" />
+    <Content Include="SysAdmin\SysManage\SysUserRight.aspx" />
+    <Content Include="SysAdmin\SysManage\TemplateEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\TemplateManage.aspx" />
+    <Content Include="SysAdmin\SysManage\TemplateNodeEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\TemplateNodeManage.aspx" />
+    <Content Include="SysAdmin\SysManage\TemplatePermit.aspx" />
+    <Content Include="SysAdmin\SysManage\UploadSet.aspx" />
+    <Content Include="SysAdmin\SysManage\UserGropEdit.aspx" />
+    <Content Include="SysAdmin\SysManage\UserGropList.aspx" />
+    <Content Include="SysAdmin\SysManage\UserGropPermit.aspx" />
+    <Content Include="SysAdmin\SysManage\WebSiteManage.aspx" />
+    <Content Include="SysAdmin\upfiles\batchupload.aspx" />
+    <Content Include="SysAdmin\upfiles\BrowseUploaded.aspx" />
+    <Content Include="SysAdmin\upfiles\ckeditorupload.aspx" />
+    <Content Include="SysAdmin\upfiles\FileManage\filesmanage.aspx" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\css\Layout.css" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\css\Login.css" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\css\Style.css" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\bg_btn.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\7z.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\asf.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\asp.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\asx.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\bmp.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\chm.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\do.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\doc.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\docx.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\exe.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\flv.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\folder.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\gif.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\hlp.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\htm.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\html.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\jpeg.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\jpg.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\js.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\mid.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\midi.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\mp3.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\mpeg.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\mpg.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\other.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\pdf.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\php.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\png.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\psd.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\rar.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\rm.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\rmvb.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\shtml.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\swf.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\tif.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\txt.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\wav.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\xls.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\xlsx.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\xml.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext2\zip.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\asf.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\asp.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\asx.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\bmp.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\chm.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\dir.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\do.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\doc.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\docx.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\exe.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\flv.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\folder.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\gif.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\hlp.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\htm.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\html.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\jpeg.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\jpg.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\js.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\mid.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\midi.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\mp3.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\mpeg.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\mpg.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\other.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\pdf.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\php.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\png.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\psd.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\rar.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\rm.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\rmvb.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\shtml.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\swf.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\tif.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\txt.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\wav.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\xls.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\xlsx.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\xml.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\ext\zip.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoAdd.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoDelete.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoExit.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoFolder.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoHighlighter.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoLeft.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoNotepad.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoOtherFile.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoPackage.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoPassword.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoSign.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoUsername.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\IcoZip.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\Images\search.jpg" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\js\jquery-1.1.3.1.pack.js" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\js\Manage.js" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\js\subModal\close.gif" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\js\subModal\common.js" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\js\subModal\index.html" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\js\subModal\loading.html" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\js\subModal\maskBG.png" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\js\subModal\modalContent.html" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\js\subModal\style.css" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\js\subModal\subModal.css" />
+    <Content Include="SysAdmin\upfiles\FileManage\style\js\subModal\subModal.js" />
+    <Content Include="SysAdmin\upfiles\FlashImageUpload\expressInstall.swf" />
+    <Content Include="SysAdmin\upfiles\FlashImageUpload\ImageUpload.aspx" />
+    <Content Include="SysAdmin\upfiles\FlashImageUpload\upimage.aspx" />
+    <Content Include="SysAdmin\upfiles\FlashImageUpload\uploadImage.swf" />
+    <Content Include="SysAdmin\upfiles\FlashImageUpload\说明.txt" />
+    <Content Include="SysAdmin\upfiles\showimage\default.aspx" />
+    <Content Include="SysAdmin\upfiles\showimage\images\gobottom.gif" />
+    <Content Include="SysAdmin\upfiles\showimage\images\gobottom2.gif" />
+    <Content Include="SysAdmin\upfiles\showimage\images\goleft.gif" />
+    <Content Include="SysAdmin\upfiles\showimage\images\goleft2.gif" />
+    <Content Include="SysAdmin\upfiles\showimage\images\goright.gif" />
+    <Content Include="SysAdmin\upfiles\showimage\images\goright2.gif" />
+    <Content Include="SysAdmin\upfiles\showimage\images\gotop.gif" />
+    <Content Include="SysAdmin\upfiles\showimage\images\gotop2.gif" />
+    <Content Include="SysAdmin\upfiles\swfobject.js" />
+    <Content Include="SysAdmin\upfiles\upload.aspx" />
+    <Content Include="SysAdmin\upfiles\uploadify\Default.aspx" />
+    <Content Include="SysAdmin\upfiles\uploadify\editupload.aspx" />
+    <Content Include="SysAdmin\upfiles\uploadify\Javascript\jquery.uploadify-v2.1.4\btn.png" />
+    <Content Include="SysAdmin\upfiles\uploadify\Javascript\jquery.uploadify-v2.1.4\btnstart.png" />
+    <Content Include="SysAdmin\upfiles\uploadify\Javascript\jquery.uploadify-v2.1.4\cancel.png" />
+    <Content Include="SysAdmin\upfiles\uploadify\Javascript\jquery.uploadify-v2.1.4\jquery-1.4.2.min.js" />
+    <Content Include="SysAdmin\upfiles\uploadify\Javascript\jquery.uploadify-v2.1.4\jquery.uploadify.v2.1.4.js" />
+    <Content Include="SysAdmin\upfiles\uploadify\Javascript\jquery.uploadify-v2.1.4\swfobject.js" />
+    <Content Include="SysAdmin\upfiles\uploadify\Javascript\jquery.uploadify-v2.1.4\uploadify.css" />
+    <Content Include="SysAdmin\upfiles\uploadify\Javascript\jquery.uploadify-v2.1.4\uploadify.swf" />
+    <Content Include="SysAdmin\upfiles\uploadify\Style.css" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024040832512.gif" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024041255496.jpg" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024043956309.gif" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024044032074.gif" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024044132746.jpg" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024044218824.gif" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024050950449.jpg" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024051014293.jpg" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024055538621.jpg" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024055632012.jpg" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024055915746.gif" />
+    <Content Include="SysAdmin\upfiles\uploadify\uploadfiles\20121024060157449.jpg" />
+    <Content Include="SysAdmin\ValidateCode.aspx" />
+    <Content Include="ueditor\net\upload\2013-03-05\cca97f79-86d7-4a6a-b360-5d58967f6b28.png" />
+    <Content Include="ueditor\net\upload\2013-03-05\d2a0aec0-82eb-4cd8-9cce-1ae13986aebe.jpg" />
+    <Content Include="ueditor\net\upload\2013-03-05\d5ebe430-90ce-4eb6-b8a4-32fa0382dd7c.jpg" />
+    <Content Include="uploadify\Javascript\jquery.uploadify-v2.1.4\btn.png" />
+    <Content Include="uploadify\Javascript\jquery.uploadify-v2.1.4\btnstart.png" />
+    <Content Include="uploadify\Javascript\jquery.uploadify-v2.1.4\cancel.png" />
+    <Content Include="uploadify\Javascript\jquery.uploadify-v2.1.4\jquery.uploadify.v2.1.4.js" />
+    <Content Include="uploadify\Javascript\jquery.uploadify-v2.1.4\swfobject.js" />
+    <Content Include="uploadify\Javascript\jquery.uploadify-v2.1.4\uploadify.css" />
+    <Content Include="uploadify\Javascript\jquery.uploadify-v2.1.4\uploadify.swf" />
+    <Content Include="uploadify\Javascript\jquery.uploadify-v2.1.4\hr.css" />
+    <Content Include="uploadify\Style.css" />
+    <Content Include="uploadify\uploadfiles\20121024040832512.gif" />
+    <Content Include="uploadify\uploadfiles\20121024041255496.jpg" />
+    <Content Include="uploadify\uploadfiles\20121024043956309.gif" />
+    <Content Include="uploadify\uploadfiles\20121024044032074.gif" />
+    <Content Include="uploadify\uploadfiles\20121024044132746.jpg" />
+    <Content Include="uploadify\uploadfiles\20121024044218824.gif" />
+    <Content Include="uploadify\uploadfiles\20121024050950449.jpg" />
+    <Content Include="uploadify\uploadfiles\20121024051014293.jpg" />
+    <Content Include="uploadify\uploadfiles\20121024055538621.jpg" />
+    <Content Include="uploadify\uploadfiles\20121024055632012.jpg" />
+    <Content Include="uploadify\uploadfiles\20121024055915746.gif" />
+    <Content Include="uploadify\uploadfiles\20121024060157449.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Common.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Model.en-us.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Model.en-us1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Model.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Model1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resource.en-us.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.en-us1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\FriendLink.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>FriendLink1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\FriendLink.en-us.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>FriendLink.en-us1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Member.en-us.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Member.en-us1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Member.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Member1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Content.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Content.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Trojan.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Trojan1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Orgin.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Orgin1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\KeywordFilter.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>KeywordFilter1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SysAdmin\Login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="Properties\" />
+    <Folder Include="SysAdmin\Editor\CKEditor\plugins\importexcel\dialogs\" />
+    <Folder Include="SysAdmin\Editor\CKEditor\plugins\importppt\dialogs\" />
+    <Folder Include="SysAdmin\Editor\CKEditor\plugins\importword\dialogs\" />
+    <Folder Include="SysAdmin\images\DTree\.svn\props\" />
+    <Folder Include="SysAdmin\images\DTree\.svn\tmp\prop-base\" />
+    <Folder Include="SysAdmin\images\DTree\.svn\tmp\props\" />
+    <Folder Include="SysAdmin\images\DTree\.svn\tmp\text-base\" />
+    <Folder Include="UploadFiles\Files\" />
+    <Folder Include="UploadFiles\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KINGTOP.BLL\KingTop.BLL.csproj">
+      <Project>{EC02F834-649B-4BA0-AF72-A1B45C10EED0}</Project>
+      <Name>KingTop.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KINGTOP.COMMON\KingTop.Common.csproj">
+      <Project>{9F35FFA7-FE46-4CBE-B4AA-94B2190D214A}</Project>
+      <Name>KingTop.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KINGTOP.CONFIG\KingTop.Config.csproj">
+      <Project>{8316DC72-09C5-4EAB-955C-0272BBEA7216}</Project>
+      <Name>KingTop.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KINGTOP.MODEL\KingTop.Model.csproj">
+      <Project>{A1B665BB-C516-4000-88C6-ECC833921A74}</Project>
+      <Name>KingTop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KingTop.Modules\KingTop.Modules.csproj">
+      <Project>{D4F4E904-0CC8-4970-8445-7B8A32E83B32}</Project>
+      <Name>KingTop.Modules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KingTop.Template\KingTop.Template.csproj">
+      <Project>{E55F7582-D104-43F2-BE5B-F3938744BCFA}</Project>
+      <Name>KingTop.Template</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.3.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells, Version=5.3.1.0, Culture=neutral, PublicKeyToken=9ec0ff091d04b091, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Pdf, Version=7.7.0.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Slides, Version=7.2.0.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Slides.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=10.5.0.0, Culture=neutral, PublicKeyToken=fa9a48344f15a022, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="icsharpcode.sharpziplib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\icsharpcode.sharpziplib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SQLDMO, Version=8.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>bin\Interop.SQLDMO.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SysAdmin\Editor\ueditor\net\getContent.ashx" />
+    <Content Include="SysAdmin\Editor\ueditor\net\getMovie.ashx" />
+    <Content Include="SysAdmin\Editor\ueditor\net\getRemoteImage.ashx" />
+    <Content Include="SysAdmin\Editor\ueditor\net\scrawlUp.ashx" />
+    <Content Include="SysAdmin\Editor\ueditor\third-party\source code for imgupload with flash.zip" />
+    <Content Include="SysAdmin\Configuraion\DataBaseManage.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="SysAdmin\images\DTree\.svn\entries" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\base.png.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\cancel.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\cd.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\del.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\edit.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\empty.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\file.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\folderclosed.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\folderopen.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\globe.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\hline.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\imgfolder.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\join.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\joinbottom.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\minus.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\minusbottom.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\musicfolder.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\nolines_minus.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\nolines_plus.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\page.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\page3.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\plus.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\plusbottom.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\question.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\save.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\Thumbs.db.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\trash.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\treeview-black-line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\treeview-black.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\treeview-default-line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\treeview-default.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\treeview-famfamfam-line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\treeview-famfamfam.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\treeview-gray-line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\treeview-gray.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\treeview-red-line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\prop-base\treeview-red.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\base.png.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\cancel.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\cd.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\del.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\edit.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\empty.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\file.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\folderclosed.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\folderopen.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\globe.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\hline.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\imgfolder.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\join.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\joinbottom.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\minus.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\minusbottom.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\musicfolder.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\nolines_minus.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\nolines_plus.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\page.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\page3.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\plus.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\plusbottom.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\question.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\save.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\Thumbs.db.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\trash.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\treeview-black-line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\treeview-black.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\treeview-default-line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\treeview-default.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\treeview-famfamfam-line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\treeview-famfamfam.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\treeview-gray-line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\treeview-gray.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\treeview-red-line.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\.svn\text-base\treeview-red.gif.svn-base" />
+    <None Include="SysAdmin\images\DTree\vssver2.scc" />
+    <None Include="SysAdmin\lib\ligerUI\js\vssver2.scc" />
+    <None Include="SysAdmin\lib\ligerUI\skins\Aqua\css\vssver2.scc" />
+    <None Include="SysAdmin\lib\ligerUI\skins\Aqua\images\box\vssver2.scc" />
+    <None Include="SysAdmin\lib\ligerUI\skins\Aqua\images\controls\vssver2.scc" />
+    <None Include="SysAdmin\lib\ligerUI\skins\Aqua\images\grid\vssver2.scc" />
+    <None Include="SysAdmin\lib\ligerUI\skins\Aqua\images\icon\vssver2.scc" />
+    <None Include="SysAdmin\lib\ligerUI\skins\Aqua\images\layout\vssver2.scc" />
+    <None Include="SysAdmin\lib\ligerUI\skins\Aqua\images\panel\vssver2.scc" />
+    <None Include="SysAdmin\lib\ligerUI\skins\Aqua\images\tree\vssver2.scc" />
+    <None Include="SysAdmin\lib\ligerUI\skins\Aqua\images\vssver2.scc" />
+    <None Include="SysAdmin\lib\vssver2.scc" />
+    <Content Include="SysAdmin\upfiles\uploadify\Upload.ashx" />
+    <Content Include="uploadify\Upload.ashx" />
+    <Content Include="ueditor\net\fileUp.ashx" />
+    <Content Include="ueditor\net\getContent.ashx" />
+    <Content Include="ueditor\net\getMovie.ashx" />
+    <Content Include="ueditor\net\getRemoteImage.ashx" />
+    <Content Include="ueditor\net\imageManager.ashx" />
+    <Content Include="ueditor\net\imageUp.ashx" />
+    <Content Include="ueditor\net\scrawlUp.ashx" />
+    <None Include="ueditor\net\upload\2013-03-05\e152aa1e-039e-40a7-83d2-2fb75d000619.rar" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5314</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2066</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

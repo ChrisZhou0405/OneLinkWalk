@@ -1,0 +1,44 @@
+$(function(){
+  var menuwidth  = 240; // 边栏宽度
+  var menuspeed  = 400; // 边栏滑出耗费时间
+  
+  var $bdy       = $('body');
+  var $container = $('#pgcontainer');
+  var $burger    = $('#hamburgermenu');
+  var negwidth   = "-"+menuwidth+"px";
+  var poswidth   = menuwidth+"px";
+  
+  $('.menubtn').on('click',function(e){
+    if($bdy.hasClass('openmenu')) {
+      jsAnimateMenu('close');
+    } else {
+      jsAnimateMenu('open');
+	  $(this).css('right',90+'%');
+    }
+  });
+  
+  $('.overlay').on('click', function(e){
+    if($bdy.hasClass('openmenu')) {
+      jsAnimateMenu('close');
+	   $('.menubtn').css('right',2.5+'%');
+    }
+  });
+  
+  function jsAnimateMenu(tog) {
+    if(tog == 'open') {
+      $bdy.addClass('openmenu');
+      
+      $container.animate({marginRight: negwidth, marginLeft: poswidth}, menuspeed);
+      $burger.animate({width: poswidth}, menuspeed);
+      $('.overlay').animate({left: poswidth}, menuspeed);
+    }
+    
+    if(tog == 'close') {
+      $bdy.removeClass('openmenu');
+      
+      $container.animate({marginRight: "0", marginLeft: "0"}, menuspeed);
+      $burger.animate({width: "0"}, menuspeed);
+      $('.overlay').animate({left: "0"}, menuspeed);
+    }
+  }
+});

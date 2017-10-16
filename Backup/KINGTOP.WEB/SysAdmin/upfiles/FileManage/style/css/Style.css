@@ -1,0 +1,241 @@
+﻿body
+{
+    margin: 0px;
+    
+	font-size: 9pt;
+	font-family: Tahoma, Verdana, Arial, "新宋体", "宋体";
+}
+
+/* 图片无边框 */
+img
+{
+    border: 0px;
+}
+
+/* 超链接 */
+a
+{
+	text-decoration: none;
+	color: #0160C6;
+	
+}
+    a:hover
+    {
+        color: #000;
+    }
+
+/* 表单 */
+form
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 文本框, 下拉菜单 */
+.txt
+{
+	padding: 1px;
+	padding-left: 3px;
+	border: 1px solid #CCCCCC;
+	font-family: Tahoma, Verdana, Arial, "新宋体", "宋体";	
+	font-size: 12px;
+	color: #666680;	
+	line-height: 17px;
+}
+input
+{
+    height: 18px;
+}
+.select
+{
+	height: 22px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 10pt;
+	font-family: Arial, Tahoma, "新宋体", "宋体";
+	line-height: 22px;
+}
+
+/* 文本框焦点 */
+.colorfocus
+{
+    padding: 1px;
+	padding-left: 3px;
+    background-color: #FFEEC2;
+    font-family: Tahoma, Verdana, Arial, "新宋体", "宋体";	
+	font-size: 12px;
+    color: #000;
+	border: 1px #4B4B6F double;
+	line-height: 17px;
+}
+
+/* 复选框 */
+.cb
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: 9pt;
+    border: 0px;
+}
+
+/* 按钮 */
+.btn
+{
+	
+	height: 22px;
+	padding: 0px;
+	background: #fff;
+	background: url("style/Images/bg_btn.gif") repeat-x;
+	font-size: 12px;
+	line-height: 20px;
+	border: 1px solid #CCCCCC;
+}
+
+/* 容器 */
+#container
+{
+    background-color: #FFF;
+    text-align: left;
+    border-left: #9F9F9F 1px solid;
+    border-right: #9F9F9F 1px solid;
+}
+
+/* 顶部 */   
+#header
+{
+    background-color: #F1F1F1;
+    border-bottom: #959595 5px solid;
+}
+
+/* 中间 */
+#middle
+{
+}
+    #leftFrame, #rightsidebar
+    {
+        /*background-color: #F1F1F1;*/
+        border: #B8C1CA 1px solid;
+    }
+    /* 左边框 */
+    #leftFrame
+    {
+        
+    }
+
+/* h3标题 */
+.title
+{
+    margin: 0px;
+    padding: 1px;
+    font-size: 10pt;
+    border-bottom: #C0C0C0 1px solid;
+}
+/* 框 */   
+.box
+{
+    margin: 0px;
+    padding: 5px;
+    background-color: #FFF;
+    border: #C0C0C0 1px solid;    
+}    
+/* 消息提示 */
+.msg
+{
+    color: #FEBC48; 
+    font-weight: bold;
+}
+/* 表格第一行 */
+.trtitle
+{
+    color: #003380;
+    font-weight: bold;
+}
+/* 搜索 */
+.searchBox
+{
+    margin-top: 10px; 
+    padding: 5px; 
+    border: 1px solid #CCC;
+}
+/* 表格 */
+.m-table
+{
+    width: 100%;
+    margin-top: 10px;
+    padding: 0px;
+    background: #e7e7e7;
+	border: 1px solid #CCC;
+	word-wrap: break-word;
+}
+    /* 表头 */
+    .m-head
+    {
+        color: #003380;
+	    background: #F2F2F2;
+	    font-weight: bold;
+    }
+    /* 交替行背景 */
+    .m-row1
+    {
+	    background: #fff;
+    }
+    .m-row2
+    {
+	    background: #f8f8f8;
+    }
+
+/* 当对象内文本溢出时显示省略标记(...) */
+.ellipsis span
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+html>body .ellipsis span:after {
+   content: "...";
+}
+
+/* Notepad */
+#notepad-frame
+{
+    background-color: #F1F1F1;
+    border: #B8C1CA 1px solid;
+}
+    #notepad-title
+    {
+    }
+    #notepad-content
+    {        
+        border-top: #A4A464 1px solid;
+    }
+
+/* 分页 */
+.pageStyle
+{
+    margin-top: 10px;
+    color: #666666;
+    font-family: Verdana, Tahoma;
+	font-size: 10px;
+} 
+
+/* 底部 */
+#footer
+{
+    background-color: #959595;
+    text-align: left;
+    font-size: 8pt;
+    color: #FFF;
+}
+
+/*分页*/
+
+.page{ height:30px; float:right; margin-top:20px;}
+.page li{  float:left; display:inline; font-family:'微软雅黑'; margin-left:4px;background: #fff;color:#003380}
+.page li a{ display:block; float:left; min-width:15px; width:auto !important; height:15px; color:#0160C6;   border:1px solid #d5d7db; text-align:center; _padding:0 5px;}
+.page li a.text{ padding:0 3px;}
+.page li a:hover,.page li a.hover{ background:#0a58a9; color:#a2c6e9;}
+.page span{float:left}
+.page li a.hover02{ display:block; float:left; min-width:15px; width:auto !important; height:15px; color:#003380;background:#F1F1F1;border:0px;  text-align:center; _padding:0 5px;}
+

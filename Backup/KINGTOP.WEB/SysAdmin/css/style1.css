@@ -1,0 +1,105 @@
+﻿@charset "utf-8";
+/*
+Powered By www.toprand.com
+*/
+
+/*Reset*/
+*{ padding:0; margin:0}
+html,div,ul,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,img,form,embed,label{margin:0;padding:0;border:0; font-size:12px; font-weight:normal;}
+img{border:none}
+object{ display:block;}
+ul,ul li{ list-style:none;} 
+.cls{clear:both; line-height:0px!important; height:0px!important;font-size:0px!important;} 
+.play{ display:none;} 
+select,input{ vertical-align:middle;font-size:12px;}  
+a {color:#666;text-decoration:none;}
+a:visited {color:#666;text-decoration:none;}
+a:hover {color:#ff0000;}
+a:active {color:#ff0000;}
+.dis{display:block;}
+.undis{display:none;}
+.hidden{ display:none}
+/*basic*/ 
+body{margin:0px; padding:0px;font-family:"\5B8B\4F53", Arial, Helvetica, sans-serif; font-size:12px;color:#333;}  
+
+/*wrap*/
+.wrap{ margin:0 auto; position:relative; width:100%;}
+
+
+/*head*/
+.head{ float:left; width:100%; background: url(/sysadmin/images/bg_top.jpg) no-repeat; height:77px;}
+.head h1{ float:left; margin: 20px; display:inline}
+.nav{ float:left; width:670px; line-height:35px; margin-top:42px; margin-left:38px; display:inline}
+.navlist li{ float:left; background: url(/sysadmin/images/tab1.jpg) no-repeat 0 1px; width:117px; text-align:center; font-size:14px; color:#fff; font-weight:bold; margin:0 5px; display:inline; cursor:pointer}
+.navlist li.hover{ background:url(/sysadmin/images/tab2.jpg) no-repeat; width:137px; color:#1b7ab7;}
+.rhead{ float:right; text-align:right; color:#fff; padding-top:15px; margin-right:10px; display:inline}
+.admin{ font-size:13px; padding-bottom:15px;}
+.oo{ color:#ffd800;}
+
+.wrap .admin2 a{ color:#fff}
+.wrap .admin2 a:hover{ color:#fff}
+
+
+
+/*nav*/
+
+
+
+/*banner*/
+
+
+/*main*/
+.main{}
+
+/*left*/
+
+
+ 
+ 
+/*right*/ 
+
+
+ 
+ 
+/*m_left*/
+
+
+
+
+/*m_right*/
+
+
+
+
+/*foot*/
+.foot{}
+
+ 
+ 
+ 
+ 
+/*text*/
+.b{ font-weight:bold;}
+.f8{ font-size:8px;}
+.f9{ font-size:9px;}
+.f10{ font-size:10px;}
+.f11{ font-size:11px;}
+.f12{ font-size:12px;}
+.f13{ font-size:13px;}
+.f14{ font-size:14px;}
+.f15{ font-size:15px;}
+.f16{ font-size:16px;}
+.f18{ font-size:18px;}
+.f24{ font-size:24px;}
+.f32{ font-size:32px;}
+.f36{ font-size:36px;}
+.f_l{ float:left;}
+.f_r{ float:right;}
+.em{ text-indent:2em;}
+.hei{ color:#000;}
+.red{ color:#ff0000;}
+
+.Arial{ font-family:"Arial", Helvetica, sans-serif;}
+.yahei{ font-family:"\5FAE\8F6F\96C5\9ED1";} 
+ 
+/*txt btn*/

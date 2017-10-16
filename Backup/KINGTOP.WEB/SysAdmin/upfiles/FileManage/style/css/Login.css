@@ -1,0 +1,41 @@
+﻿#login
+{
+    background-color: #FFF;
+    text-align: left;
+    border: #C0C0C0 1px solid;
+}
+    #login #username
+    {
+        background: url(style/Images/IcoUsername.gif) 1px 2px no-repeat;
+        padding-left: 22px;
+    }
+    #login #password
+    {
+        background: url(style/Images/IcoPassword.gif) 1px 2px no-repeat;
+        padding-left: 22px;
+    }
+    #login #code
+    {
+        background: url(style/Images/IcoSign.gif) 1px 2px no-repeat;
+        padding-left: 22px;
+    }
+
+fieldset
+{
+    padding: 0px;
+    margin: 0px;
+}
+    fieldset legend
+    {
+        padding: 0px 5px;
+        font-weight: bold;
+    }
+    fieldset div
+    {
+        margin: 8px;
+    }
+        fieldset label
+        {
+            float: left;
+            width: 55px;
+        }

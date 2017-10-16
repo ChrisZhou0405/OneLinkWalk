@@ -1,0 +1,196 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="video.css" />
+    
+</head>
+<body>
+<div class="wrapper">
+    <div id="videoTab">
+        <div id="tabHeads">
+            <span tabSrc="video" class="focus"><var id="lang_tab_insertV"></var></span>
+            <span tabSrc="videoLocal"><var id="lang_tab_localV"></var></span>
+            <span tabSrc="videoSearch"><var id="lang_tab_searchV"></var></span>
+        </div>
+        <div id="tabBodys">
+            <div id="video" class="panel">
+               <table><tr><td><label for="videoUrl" class="url"><var id="lang_video_url"></var></label></td><td><input id="videoUrl" type="text"></td></tr></table>
+               <div id="preview"></div>
+               <div id="videoInfo">
+                   <fieldset>
+                       <legend><var id="lang_video_size"></var></legend>
+                       <table>
+                           <tr><td><label for="videoWidth"><var id="lang_videoW"></var></label></td><td><input class="txt" id="videoWidth" type="text"/></td></tr>
+                           <tr><td><label for="videoHeight"><var id="lang_videoH"></var></label></td><td><input class="txt" id="videoHeight" type="text"/></td></tr>
+                       </table>
+                   </fieldset>
+                   <fieldset>
+                      <legend><var id="lang_alignment"></var></legend>
+                      <div id="videoFloat"></div>
+                  </fieldset>
+               </div>
+            </div>
+            <div id="videoSearch" class="panel" style="display: none">
+                <table style="margin-top: 5px;">
+                    <tr>
+                        <td><input id="videoSearchTxt"  type="text" /></td>
+                        <td>
+                            <select id="videoType">
+                                <option value="0"></option>
+                                <option value="29"></option>
+                                <option value="1"></option>
+                                <option value="5"></option>
+                                <option value="15"></option>
+                                <option value="21"></option>
+                                <option value="31"></option>
+                            </select>
+                        </td>
+                        <td><input id="videoSearchBtn" type="button"/></td>
+                        <td><input id="videoSearchReset" type="button" /></td>
+                    </tr>
+                </table>
+                <div id="searchList"></div>
+            </div>
+            <div id="videoLocal" class="panel" style="display: none">
+                
+                
+                    <div class="controller">
+                        <!--<span id="divStatus"></span>-->
+                        <span id="spanButtonPlaceHolder"></span>
+                    </div>
+                    <div class="fieldset flash" id="fsUploadProgress"></div>
+                    <div style="width:420px;float:left;padding-left:10px;line-height:18px">1.允许上传的文件类型有：*.wav;*.avi;*.mpg;*.mpeg
+;*.wma;*.flv;*.swf<br />2.最大可以上传100 MB；如果网速不好，文件太大将会上传失败。可以用FTP将文件上传到服务器uploadfiles/medias/文件夹中，然后切换到“插入视频”在视频网址中输入视频地址："/uploadfiles/medias/****.swf"<br />
+3.建议将视频转换为*.flv;*.swf格式，这样可以控制视频大小，又不会存在浏览器不兼容导致视频不能播放问题。<a href="../../../chs_bsvcsetup.rar" target="_blank">下载视频转换器</a>
+</div>
+                    
+                    <span id="startUpload" style="display: none;"></span>
+
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../internal.js"></script>
+<script type="text/javascript" src="video.js"></script>
+
+<script type="text/javascript" src="../../third-party/swfupload/swfupload.js"></script>
+<script type="text/javascript" src="../../third-party/swfupload/swfupload.queue.js"></script>
+<script type="text/javascript" src="../../third-party/swfupload/fileprogress.js"></script>
+<script type="text/javascript" src="../attachment/callbacks.js"></script>
+<script type="text/javascript" src="../attachment/fileTypeMaps.js"></script>
+
+<script type="text/javascript">
+    var swfupload,
+        filesList = [];
+    editor.setOpt({
+        fileFieldName: "upfile"
+    });
+
+    window.onload = function() {
+        video.init();
+        $focus($G("videoUrl"));
+
+        
+
+        var settings = {
+            upload_url: editor.options.fileUrl,           //附件上传服务器地址
+            file_post_name: editor.options.fileFieldName,      //向后台提交的表单名
+            flash_url: "../../third-party/swfupload/swfupload.swf",
+            flash9_url: "../../third-party/swfupload/swfupload_fp9.swf",
+            post_params: { "UpType": "media" }, //解决session丢失问题
+            file_size_limit: "100 MB",                                 //文件大小限制，此处仅是前端flash选择时候的限制，具体还需要和后端结合判断
+            file_types: "*.wav;*.avi;*.mpg;*.mpeg;*.wma;*.flv;*.swf",                                         //允许的扩展名，多个扩展名之间用分号隔开，支持*通配符
+            file_types_description: "All Files",                      //扩展名描述
+            file_upload_limit: 100,                                   //单次可同时上传的文件数目
+            file_queue_limit: 10,                                      //队列中可同时上传的文件数目
+            custom_settings: {                                         //自定义设置，用户可在此向服务器传递自定义变量
+                progressTarget: "fsUploadProgress",
+                startUploadId: "startUpload"
+            },
+            debug: false,
+
+            // 按钮设置
+            button_image_url: "../../themes/default/images/fileScan.png",
+            button_width: "100",
+            button_height: "25",
+            button_placeholder_id: "spanButtonPlaceHolder",
+            button_text: '<span class="theFont">' + lang.browseFiles + '</span>',
+            button_text_style: ".theFont { font-size:14px;}",
+            button_text_left_padding: 10,
+            button_text_top_padding: 4,
+
+            // 所有回调函数 in handlers.js
+            swfupload_preload_handler: preLoad,
+            swfupload_load_failed_handler: loadFailed,
+            file_queued_handler: fileQueued,
+            file_queue_error_handler: fileQueueError,
+            //选择文件完成回调
+            file_dialog_complete_handler: function(numFilesSelected, numFilesQueued) {
+                var me = this;        //此处的this是swfupload对象
+                if (numFilesQueued > 0) {
+                    dialog.buttons[0].setDisabled(true);
+                    var start = $G(this.customSettings.startUploadId);
+                    start.style.display = "";
+                    start.onclick = function() {
+                        me.startUpload();
+                        start.style.display = "none";
+                    }
+                }
+            },
+            upload_start_handler: uploadStart,
+            upload_progress_handler: uploadProgress,
+            upload_error_handler: uploadError,
+            upload_success_handler: function(file, serverData) {
+                try {
+                    var info = eval("(" + serverData + ")");
+                } catch (e) { }
+                var progress = new FileProgress(file, this.customSettings.progressTarget);
+                if (info.state == "SUCCESS") {
+                    progress.setComplete();
+                    progress.setStatus("<span style='color: #0b0;font-weight: bold'>" + lang.uploadSuccess + "</span>");
+                    filesList.push({ url: info.url, type: info.fileType, original: info.original });
+                    progress.toggleCancel(true, this, lang.delSuccessFile);
+                } else {
+                    progress.setError();
+                    progress.setStatus(info.state);
+                    progress.toggleCancel(true, this, lang.delFailSaveFile);
+                }
+
+            },
+            //上传完成回调
+            upload_complete_handler: uploadComplete,
+            //队列完成回调
+            queue_complete_handler: function(numFilesUploaded) {
+                dialog.buttons[0].setDisabled(false);
+                //                var status = $G("divStatus");
+                //                var num = status.innerHTML.match(/\d+/g);
+                //                status.innerHTML = ((num && num[0] ?parseInt(num[0]):0) + numFilesUploaded) +lang.statusPrompt;
+            }
+        };
+        swfupload = new SWFUpload(settings);
+    };
+
+    function insertLocal() {
+        var map = fileTypeMaps,
+                str = "";
+        videoObjs = [];
+
+        for (var i = 0, ci; ci = filesList[i++]; ) {
+            videoObjs.push({
+                url: ci.url,
+                width: 420,
+                height: 280,
+                align: "none"
+            });
+        }
+        editor.execCommand('insertvideo', videoObjs);
+        swfupload.destroy();
+    }
+</script>
+</body>
+</html>

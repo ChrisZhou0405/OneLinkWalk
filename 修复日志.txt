@@ -1,0 +1,7 @@
+20150624 后台CKEditor编辑器添加行距
+20150507 修复后台栏目管理树形超过5级层级不能展开
+20150808 添加通用自定义模块和EasyUI模块，路径：/SysAdmin/Common/
+20151103 修改生成模型页面编码为UTF8，
+路径：KingTop.BLL.Content.ParseModelList.cs  CreateList()
+      KingTop.BLL.Content.ParseModelEdit.cs  CreateEdit()
+      KingTop.BLL.Content.ParseModelView.cs  CreateView()

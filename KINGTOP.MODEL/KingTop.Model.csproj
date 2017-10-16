@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1B665BB-C516-4000-88C6-ECC833921A74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KingTop.Model</RootNamespace>
+    <AssemblyName>KingTop.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Content\LinkList.cs" />
+    <Compile Include="Content\ModelcommonFieldGroup.cs" />
+    <Compile Include="Content\ModelField.cs" />
+    <Compile Include="Content\ModelFieldGroup.cs" />
+    <Compile Include="Content\ModelManage.cs" />
+    <Compile Include="Content\RecyclingAssociated.cs" />
+    <Compile Include="Content\RecyclingManage.cs" />
+    <Compile Include="Content\ReviewFlow.cs" />
+    <Compile Include="Content\ReviewFlowLog.cs" />
+    <Compile Include="Content\SysField.cs" />
+    <Compile Include="pageModel\Json.cs" />
+    <Compile Include="PageParams.cs" />
+    <Compile Include="Pager.cs" />
+    <Compile Include="SelectParams.cs" />
+    <Compile Include="Single\SinglePage.cs" />
+    <Compile Include="SysManage\Account.cs" />
+    <Compile Include="SysManage\AccountSite.cs" />
+    <Compile Include="SysManage\ActionPermit.cs" />
+    <Compile Include="SysManage\Module.cs" />
+    <Compile Include="SysManage\ModuleNode.cs" />
+    <Compile Include="SysManage\PublicOper.cs" />
+    <Compile Include="SysManage\Role.cs" />
+    <Compile Include="SysManage\RolePermit.cs" />
+    <Compile Include="SysManage\SysLog.cs" />
+    <Compile Include="SysManage\SysWebSite.cs" />
+    <Compile Include="SysManage\TableInfo.cs" />
+    <Compile Include="SysManage\User.cs" />
+    <Compile Include="SysManage\UserGroup.cs" />
+    <Compile Include="SysManage\UserGroupPermit.cs" />
+    <Compile Include="SysManage\UserGroupRole.cs" />
+    <Compile Include="SysManage\UserRole.cs" />
+    <Compile Include="SysManage\WebSiteTemplate.cs" />
+    <Compile Include="SysManage\WebSiteTemplateNode.cs" />
+    <Compile Include="SysManage\WebSiteTemplatePermit.cs" />
+    <Compile Include="Template\LableClassInfo.cs" />
+    <Compile Include="Template\LableFreeInfo.cs" />
+    <Compile Include="Template\LableInfo.cs" />
+    <Compile Include="Template\TemplateProject.cs" />
+    <Compile Include="Template\TemplateSkin.cs" />
+    <Compile Include="Types.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.3.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KINGTOP.WEB\bin\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup />
+</Project>
